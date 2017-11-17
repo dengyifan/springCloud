@@ -1,5 +1,6 @@
 package com.yifan.spring.cloud.monkey.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,8 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    @Value("${com.yifan.spring.cloud.properties.random.uuid}")
+    private String id;
+
     @RequestMapping("/hello")
     public String index() {
         return "Hello World";
+    }
+
+    @RequestMapping("/uuid")
+    public String uuid() {
+        return id;
     }
 }

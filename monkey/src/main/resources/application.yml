@@ -1,4 +1,32 @@
+spring:
+  profiles:
+    active: test
+
 book:
   name: jvm reference
   author: zhang
   desc: ${book.name} is writing 《${book.name}》
+com:
+  yifan:
+    spring:
+      cloud:
+        properties:
+            random:
+              # 随机字符串
+              value: ${random.value}
+
+              # 随机 int
+              intValue: ${random.int}
+
+              # 随机 long
+              longValue: ${random.long}
+
+              # 10 以内的随机数
+              lessThan: ${random.int(10)}
+
+              # 10 ~ 20 的随机数
+              betweenAnd: ${random.int(10, 20)}
+
+              # uuid
+              uuid: ${random.uuid}
+
