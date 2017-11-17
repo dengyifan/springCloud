@@ -1,0 +1,4 @@
+book:
+  name: jvm reference
+  author: zhang
+  desc: ${book.name} is writing 《${book.name}》
