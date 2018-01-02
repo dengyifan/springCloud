@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
         <module name="monkey" />
+        <module name="ribbon-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="1.8" />
       <module name="monkey" target="1.8" />
+      <module name="ribbon-consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
