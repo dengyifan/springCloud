@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dengyifan/springCloud/
+          search-paths: config-server/src/main/resources/config-repo
+          username: hello
+          password: hello
+server:
+  port: 7001
