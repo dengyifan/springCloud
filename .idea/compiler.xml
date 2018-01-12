@@ -20,6 +20,7 @@
         <module name="trace-two" />
         <module name="turbine" />
         <module name="turbine-amqp" />
+        <module name="zipkin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +39,7 @@
       <module name="trace_one" target="1.8" />
       <module name="turbine" target="1.8" />
       <module name="turbine-amqp" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
