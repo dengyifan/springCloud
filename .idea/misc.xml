@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/rabbitmq-hello/pom.xml" />
         <option value="$PROJECT_DIR$/trace_one/pom.xml" />
         <option value="$PROJECT_DIR$/trace-one/pom.xml" />
+        <option value="$PROJECT_DIR$/trace-two/pom.xml" />
       </list>
     </option>
   </component>
