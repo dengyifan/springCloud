@@ -1,4 +1,4 @@
-package com.yifan.spring.cloud.monkey;
+package com.yifan.spring.cloud.sleuth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class MonkeyApplication {
+public class TraceOneApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MonkeyApplication.class, args);
+		SpringApplication.run(TraceOneApplication.class, args);
 	}
 }
