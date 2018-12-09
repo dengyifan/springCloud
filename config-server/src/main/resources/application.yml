@@ -5,9 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/dengyifan/springCloud/
-          search-paths: config-server/src/main/resources/config-repo
-          username: hello
-          password: hello
+          uri: https://github.com/dengyifan/springCloud
+          search-paths: config-repo
 server:
   port: 7001
