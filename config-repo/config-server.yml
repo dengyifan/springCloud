@@ -1,0 +1,5 @@
+com:
+  yifan:
+    springcloud:
+      configServer:
+        from: default
