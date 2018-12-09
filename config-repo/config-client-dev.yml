@@ -1,4 +1,4 @@
 com:
   yifan:
-    springcloud:
-      version: 0.0.1
+    configClient:
+      from: config-repo
