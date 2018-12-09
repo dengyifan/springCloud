@@ -79,6 +79,12 @@
 			<artifactId>spring-cloud-netflix-hystrix-amqp</artifactId>
 		</dependency>
 
+		<!-- Feign依赖，声明式开发 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

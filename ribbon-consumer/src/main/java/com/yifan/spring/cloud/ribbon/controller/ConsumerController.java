@@ -1,6 +1,5 @@
 package com.yifan.spring.cloud.ribbon.controller;
 
-import com.yifan.spring.cloud.ribbon.service.IHelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,10 +18,10 @@ import org.springframework.web.client.RestTemplate;
 public class ConsumerController {
 
     @Autowired
-    private IHelloService helloService;
+    RestTemplate restTemplate;
 
     @RequestMapping(value = "/ribbon-consumer", method = RequestMethod.GET)
     public String helloConsumer() {
-        return helloService.helloService();
+        return restTemplate.getForEntity("http://MONKEY/hello", String.class).getBody();
     }
 }

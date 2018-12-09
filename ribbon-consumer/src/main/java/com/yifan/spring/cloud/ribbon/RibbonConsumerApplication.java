@@ -1,7 +1,5 @@
 package com.yifan.spring.cloud.ribbon;
 
-import com.yifan.spring.cloud.ribbon.service.IHelloService;
-import com.yifan.spring.cloud.ribbon.service.impl.HelloService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -21,10 +19,6 @@ public class RibbonConsumerApplication {
 		return new RestTemplate();
 	}
 
-	@Bean
-	IHelloService helloService() {
-		return new HelloService();
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(RibbonConsumerApplication.class, args);
